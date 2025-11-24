@@ -1,0 +1,91 @@
+@import "colors.css";
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "SF Pro Display", "JetBrainsMono Nerd Font";
+    font-size: 1.1rem;
+    min-height: 0;
+}
+
+window#waybar {
+    background: @background;
+    color: @on_surface;
+}
+
+tooltip {
+    border-radius: 5px;
+    border: 1px solid rgba(100, 114, 125, 0.5);
+}
+
+tooltip label {
+    color: @on_surface;
+}
+
+#workspaces {
+    margin: 7px 5px 7px 5px;
+    padding: 5px 7px 5px 7px;
+    background: @surface_container_low;
+    border-radius: 5px;
+}
+
+#workspaces button {
+    margin: 1px;
+    padding: 0 10px;
+    background: @surface_container_low;
+    border-radius: 5px;
+    color: @secondary_fixed_dim;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+    background: @primary;
+    color: #121212;
+    border-radius: 5px;
+}
+
+#window {
+    margin-left: 0px;
+    margin: 7px 5px 7px 5px;
+    padding: 5px 10px;
+    background-color: @primary;
+    color: #121212;
+    border-radius: 5px;
+}
+
+#custom-distro-logo {
+    margin: 0px 9px 0px 9px;
+    font-size: 35px;
+    color: @primary;
+}
+
+#custom-notification-center {
+    margin: 0px 20px 0px 10px;
+    font-size: 25px;
+    color: @primary;
+}
+
+#clock {
+    margin: 7px 5px 7px 7px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: @primary;
+    color: #121212;
+}
+
+#custom-music,
+#custom-date,
+#pulseaudio,
+#network {
+    margin: 7px 5px 7px 5px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: @primary;
+    color: #121212;
+}
+
+#custom-tray-icon {
+    padding: 0px 10px;
+    color: @primary;
+    font-size: 15px;
+}

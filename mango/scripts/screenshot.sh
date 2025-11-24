@@ -1,0 +1,2 @@
+#!/bin/sh
+grim ~/Pictures/Screenshots/$(date +'%Y-%m-%d-%H-%M-%S_fullscreen.png') && wl-copy < ~/Pictures/Screenshots/$(date +'%Y-%m-%d-%H-%M-%S_fullscreen.png') && notify-send "Screenshot" "Screenshot taken and copied to clipboard." -i "camera-photo"
